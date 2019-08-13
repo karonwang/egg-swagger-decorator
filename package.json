@@ -1,0 +1,102 @@
+{
+  "_from": "egg-swagger-decorator@^0.1.1",
+  "_id": "egg-swagger-decorator@0.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-/04P2rlCIpU07U7JDTYCjpe/kyz/3r+os4V7CbxIXI8d3rTPzh1NxLs+NYa5z8uTYvvOTF+elmeUsR3zKHePwg==",
+  "_location": "/egg-swagger-decorator",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "egg-swagger-decorator@^0.1.1",
+    "name": "egg-swagger-decorator",
+    "escapedName": "egg-swagger-decorator",
+    "rawSpec": "^0.1.1",
+    "saveSpec": null,
+    "fetchSpec": "^0.1.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/egg-swagger-decorator/-/egg-swagger-decorator-0.1.1.tgz",
+  "_shasum": "ba2df0b8e0d82ae16405a8da8eb53ace491a043f",
+  "_spec": "egg-swagger-decorator@^0.1.1",
+  "_where": "D:\\IdeaProject\\jmshop-server-ts",
+  "author": {
+    "name": "Cody"
+  },
+  "bugs": {
+    "url": "https://github.com/Cody2333/koa-swagger-decorator/issues"
+  },
+  "bundleDependencies": false,
+  "ci": {
+    "version": "8"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
+  "deprecated": false,
+  "description": "using decorator to make router definitions and automatically generate swagger doc for egg.js",
+  "devDependencies": {
+    "@types/lodash": "^4.14.106",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.12",
+    "@types/supertest": "^2.0.0",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.6.0",
+    "egg-bin": "^4.6.3",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.17.0",
+    "egg-scripts": "^2.6.0",
+    "egg-ts-helper": "^1.4.2",
+    "tslib": "^1.9.0",
+    "tslint": "^4.0.0",
+    "typescript": "^2.8.1"
+  },
+  "egg": {
+    "typescript": true
+  },
+  "eggPlugin": {
+    "name": "swaggerDecorator"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "homepage": "https://github.com/Cody2333/koa-swagger-decorator#readme",
+  "keywords": [
+    "decorator",
+    "swagger",
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "egg-swagger-decorator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cody2333/koa-swagger-decorator.git"
+  },
+  "scripts": {
+    "autod": "autod",
+    "build": "tsc -p tsconfig_publish.json",
+    "ci": "npm run lint && npm run cov && npm run tsc",
+    "clean": "ets clean",
+    "cov": "egg-bin cov -r egg-ts-helper/register",
+    "debug": "egg-bin debug --baseDir=./test/fixtures/apps/swagger-decorator-test -r egg-ts-helper/register",
+    "dev": "egg-bin dev --baseDir=./test/fixtures/apps/swagger-decorator-test -r egg-ts-helper/register",
+    "lint": "tslint .",
+    "pub": "npm run build && npm publish",
+    "start": "egg-scripts start --baseDir=./test/fixtures/apps/swagger-decorator-test --title=egg-server-tt",
+    "stop": "egg-scripts stop --title=egg-server-tt",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test -r egg-ts-helper/register",
+    "tsc": "ets --cwd=./test/fixtures/apps/swagger-decorator-test && tsc -p tsconfig.json"
+  },
+  "types": "./dist/index.d.ts",
+  "version": "0.1.1"
+}
